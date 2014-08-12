@@ -1,0 +1,1 @@
+define(["jquery"],function(e){return function(t){e.ajax({url:"./pages.html",success:function(n){e("body").append(n),setTimeout(t,0)}})}})

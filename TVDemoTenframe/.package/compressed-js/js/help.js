@@ -1,0 +1,1 @@
+define(function(){return function(e,t){var n=document.getElementById(e),r=document.getElementById(t+"dialog"),i=document.getElementById(t+"close"),s=document.getElementById(t+"title"),o=document.getElementById(t+"contents");n.addEventListener("click",function(){r.className="helpdialog shown"}),i.addEventListener("click",function(){r.className="helpdialog"})}})

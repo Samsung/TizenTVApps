@@ -1,0 +1,1 @@
+String.prototype.startsWith=function(e){"use strict";return this.indexOf(e)===0},require(["pages","domReady!"],function(e){e(function(){require(["app","license","help","animation","sound","pirates","rockets","bowling","scaleBody"],function(e,t,n){e(),t("license","home_page"),n("home_help","help_"),scaleBody(document.getElementsByTagName("body")[0],720)})})})
