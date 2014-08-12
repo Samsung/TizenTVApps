@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>melonJS</title>
+  <meta name="description" content="melonJS homepage" />
+  <meta name="keywords" content="melonJS, HTML5, javascript, game, engine, framework" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body style="background: black;">
+
+     <div id="screen">
+         <script type="text/javascript" src="lib/melonJS-1.0.2-min.js"></script>
+         <script type="text/javascript" src="lib/plugins/debugPanel.js"></script>
+
+         <script type="text/javascript" src="js/game.js"></script>
+         <script type="text/javascript" src="js/resources.js"></script>
+
+         <script type="text/javascript" src="js/entities/entities.js"></script>
+         <script type="text/javascript" src="js/entities/HUD.js"></script>
+
+         <script type="text/javascript" src="js/screens/title.js"></script>
+         <script type="text/javascript" src="js/screens/play.js"></script>
+
+         <script type="text/javascript">
+             /* Bootstrap */
+             window.onReady(function onReady() {
+                 game.onload();
+             });
+         </script>
+       		<div style="float: right; padding : 30px 30px 15px 0px;">
+       		<center><img src="melonjs_and_tizen.png" style="width : 100%"/></center>
+       		<p style="font-size : 32pt; font-weight : bold; color: white;">Instructions : <br/>Arrow keys to move<br/>X to jump</p>
+    		
+    		<br />
+    		<br />
+    		<br />
+    		<br />
+    		<br />
+    		<br />
+    		<span style="text-align : center; font-size : 20pt;">
+    		Copyright &copy; <a href="http://melonjs.org/">melonJS</a> 2011 - 2014     	<br/><br/>
+    		Tizen TV SDK at <a href="http://www.samsungdforum.com/">SamsungDForum</a> <br/><br/><br/>
+    		<a href="https://github.com/Samsung/TizenTVApps">github.com/Samsung/TizenTVApps</a>
+    		</span>
+
+    		 
+    		</div>
+     </div>
+
+
+</body>
+</html>
