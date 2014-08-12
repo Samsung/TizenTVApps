@@ -4,6 +4,9 @@ The Tizen TV platform is based on HTML5 and web standards.  Therefore, it is eas
 
 One popular HTML5 gaming library is the free and open-source MelonJS game engine.  This demo app shows how a MelonJS example application can run in the Tizen Web Simulator.
 
+![Platform Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/platformer_01.png)
+![Platform Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/platformer_02.png)
+
 How to Run
 ----------
 * Clone the app in your desktop environment.
