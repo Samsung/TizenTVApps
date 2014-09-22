@@ -1,7 +1,7 @@
 TizenTVApps
 ===========
 
-This repository hosts applications for the Tizen TV Web Platform.  Tizem TV apps are HTML5/JS/CSS applications and can be run in the Tizen TV Web Simulator.  You can find the Tizen TV SDK 1.0 Beta (with Web Simulator) here:
+This repository hosts applications for the Tizen TV Web Platform.  Tizen TV apps are HTML5/JS/CSS applications and can be run in the Tizen TV Web Simulator.  You can find the Tizen TV SDK 1.0 Beta (with Web Simulator) here:
 
 http://www.samsungdforum.com/TizenDevtools/SdkDownload
 
