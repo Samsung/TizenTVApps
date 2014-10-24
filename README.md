@@ -11,10 +11,10 @@ App Overview
 **October 24, 2014**
 
 **TVDemoGrandmasBakery** : A match-3 games using the Phaser game library.
-![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/grandmas_01.png)
+![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/grandmas_01.png =250x)
 
 **TVDemoSimonSaysDemo** : A "Simon Says" games using the Phaser game library.
-![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/simonsays_01.png)
+![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/simonsays_01.png =250x)
 
 **August 12, 2014**
 
