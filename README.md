@@ -8,6 +8,16 @@ http://www.samsungdforum.com/TizenDevtools/SdkDownload
 App Overview
 ------------
 
+**October 24, 2014**
+
+**TVDemoGrandmasBakery** : A match-3 games using the Phaser game library.
+![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/grandmas_01.png)
+
+**TVDemoSimonSaysDemo** : A "Simon Says" games using the Phaser game library.
+![Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/simonsays_01.png)
+
+**August 12, 2014**
+
 **TVDemoPlatformerMelonJS** : A port of the MelonJS game demo application.
 
 ![Platform Demo in Web Simulator](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/platformer_02.png)
@@ -33,6 +43,8 @@ Credits
 Original MelonJS Demo App: http://melonjs.github.io/tutorial-platformer/
 
 Additional Tizen HTML5 Apps: https://developer.tizen.org/downloads/sample-web-applications
+
+PhaserJS homepage: http://phaser.io/
 
 
 
