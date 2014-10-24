@@ -1,0 +1,48 @@
+/* Layout */
+@font-face{
+	font-family: Retroesque;
+	src: url('../../resources/fonts/SFRetroesque-Oblique.ttf')
+}
+
+@font-face {
+	font-family: Zenith;
+	src: url('../../resources/fonts/ZENITH2000.TTF');
+}
+
+body {
+	width: 1920px;
+	height: 1080px;
+	/*width: 1280px;
+	height: 720px;*/
+	position: relative;
+	overflow: hidden;
+	font-family: 'Retroesque';
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+    background: url(../../resources/images/bg_oscuro.png) center no-repeat;
+}
+
+.scene {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	/*background-color: #000;*/
+	color: #fff;
+}
+
+.scene-text {
+	width: 80%;
+	padding-top: 200px;
+	margin-left: 10%;
+	text-align: center;
+	font-size: 50px;
+}
+
+.visible {
+	visibility: visible !important;
+}
+

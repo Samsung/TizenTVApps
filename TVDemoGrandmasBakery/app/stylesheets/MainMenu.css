@@ -1,0 +1,23 @@
+/* Scene MainMenu */
+#SceneMainMenu {
+    background-color: black;
+    background-image: url('../../resources/images/tile_cakes.png');
+    color: white;
+}
+#splashLogo {
+    margin: auto;
+    background-image: url('../../resources/images/splash_logo.png');
+    width: 927px;
+    height: 780px;
+    position: relative;
+}
+
+#startButton {
+    background-image: url('../../resources/images/start_btn.png');
+    width: 464px;
+    height: 146px;
+    top: 820px;
+    position: relative;
+    margin: auto;
+    
+}

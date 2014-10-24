@@ -1,0 +1,59 @@
+/* Scene GameState */
+#SceneGameState {
+    
+}
+
+#dim {
+	background: rgba(0,0,0,.61);
+	display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+	display: none;
+	z-index: 11;
+}
+
+#popup{
+    background-image: url("../../resources/images/good_job.png");
+    width: 962px;
+    height: 936px;
+    margin: auto;
+    
+}
+#playAgainButton {
+    background-image: url('../../resources/images/play_again_btns.png');
+    width: 417px;
+    height: 113px;
+    margin: auto;
+    top: 596px;
+    position: relative;
+    left: -23px;
+    background-position: -28px 0px;
+}
+
+
+
+#playAgainButton.focus {
+    background-position: -450px 0px;
+}
+
+#mainMenuButton {
+    background-image: url('../../resources/images/play_again_btns.png');
+    width: 417px;
+    height: 113px;
+    margin: auto;
+    top: 596px;
+    position: relative;
+    left: -23px;
+    background-position: -28px -167px;
+}
+
+
+
+#mainMenuButton.focus {
+    background-position: -450px -167px;
+}
+
+
+.ulNoStyle {
+    list-style-type: none;
+}

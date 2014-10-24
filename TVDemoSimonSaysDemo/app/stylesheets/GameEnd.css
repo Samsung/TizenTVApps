@@ -1,0 +1,66 @@
+/* Scene GameEnd */
+#SceneGameEnd {
+	visibility: hidden;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+}
+
+#crown {
+	background: url(../../resources/images/crown.png) center no-repeat;
+	width: 144px;
+	height: 108px;
+	margin-top: 100px;
+}
+
+#score-end {
+	margin-top: 20px;
+}
+
+#score-end-text {
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF;
+}
+
+#score-end-score {
+	display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+	height: 101px;
+}
+
+#end-list {
+	background: url(../../resources/images/end-game-bg.png) center no-repeat;
+	width: 576px;
+	height: 245px;
+	font-size: 50px;
+}
+
+#options-menu {
+	position: relative;
+	text-align: center;
+	-webkit-margin-before: 0;
+	padding: 1em 0;
+}
+
+#options-menu > li {
+	background: url(../../resources/images/);
+	list-style: none;
+	padding: 10px;
+}
+
+@-webkit-keyframes option-focus {
+	0%		{ -webkit-transform: scale(1); }
+	50%		{ -webkit-transform: scale(1.1); }
+	100%	{ -webkit-transform: scale(1); }
+}
+
+#options-menu > li.focus {
+	text-shadow: 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 40px #00FFFF;
+}
+
+#options-menu.animate-menu > li.focus {
+	-webkit-animation: option-focus .2s;
+}

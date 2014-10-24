@@ -1,0 +1,31 @@
+/* Layout */
+body {
+	width: 1920px;
+	height: 1080px;
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.scene {
+	width: 1920px;
+	height: 1080px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.visible {
+	visibility: visible !important;
+}
+
+@font-face {
+  font-family: LBRITED;
+  src: url('../../resources/fonts/LBRITED.TTF') format('truetype');
+}
+@font-face {
+  font-family: LBRITEDI;
+  src: url('../../resources/fonts/LBRITEDI.TTF') format('truetype');
+}

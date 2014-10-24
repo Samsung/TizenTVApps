@@ -1,0 +1,212 @@
+/* Scene Game */
+#SceneGame {
+	visibility: hidden;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+}
+
+#game-squares {
+    background: url(../../resources/images/simon-dice-retro-assets_104.png) center no-repeat;
+    display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 927px;
+    height: 260px;
+    padding-bottom: 63px;
+}
+
+.game-square {
+	width: 213px;
+	height: 161px;
+	transition: all .25 ease-in-out;
+}
+
+.game-square-selected {
+	width: 341px;
+	height: 308px;
+	/*position: absolute;*/
+	display: none;
+	transition: all .25 ease-in-out;
+}
+
+#red {
+	background: url(../../resources/images/simon-dice-retro-assets_106.png) center no-repeat;
+}
+
+#red-selected {
+	background: url(../../resources/images/down_btn_13.png) center no-repeat;
+	margin-top: -115px;
+	margin-left: -105px;
+	margin-right: -23px;
+}
+
+#green {
+	background: url(../../resources/images/simon-dice-retro-assets_107.png) center no-repeat;
+	margin-left: -4px;
+}
+
+#green-selected {
+	background: url(../../resources/images/down_btn_15.png) center no-repeat;
+	margin-top: -115px;
+	margin-left: -90px;
+	margin-right: -42px;
+}
+
+#yellow {
+	background: url(../../resources/images/simon-dice-retro-assets_108.png) center no-repeat;
+	margin-left: -5px;
+}
+
+#yellow-selected {
+	background: url(../../resources/images/down_btn_17.png) center no-repeat;
+	margin-top: -115px;
+	margin-left: -62px;
+	margin-right: -71px;
+}
+
+#blue {
+	background: url(../../resources/images/simon-dice-retro-assets_109.png) center no-repeat;
+}
+
+#blue-selected {
+	background: url(../../resources/images/down_btn_25.png) center no-repeat;
+	margin-top: -115px;
+	margin-left: -41px;
+	margin-right: -88px;
+}
+
+#game-score {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-box-orient: vertical;
+}
+
+#game-score-text {
+	background: url(../../resources/images/inputbg.png) center no-repeat;
+	height: 64px;
+	padding: 0 100px;
+	font-size: 56px;
+}
+
+#game-high-score {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	height: 101px;
+}
+
+#information {
+	margin-top: -0px;
+	margin-bottom: 100px;
+	font-size: 50px;
+	transition: all .25 ease-in-out;
+}
+
+#round {
+	margin-top: 150px;
+	font-size: 40px;
+	transition: all .25 ease-in-out;
+}
+
+#left-panel {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	position: absolute;
+	left: 100px;
+	bottom: 100px;
+}
+
+#multiplier {
+	font-size: 120px;
+	text-shadow: 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 3px #00FFFF, 0 0 40px #00FFFF;
+}
+
+#game-score-amount {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	height: 101px;
+}
+
+#life {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	padding-top: 15px;
+}
+
+.life {
+	width: 92px;
+	height: 82px;
+	background: url(../../resources/images/simon-dice-retro-assets_55.png) center no-repeat;
+	transition: all .25 ease-in-out;
+}
+
+.life.lost {
+	background: url(../../resources/images/simon-dice-retro-assets_56.png) center no-repeat;
+}
+
+.zenith-one {
+	width: 54px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_23.png) center no-repeat;
+}
+.zenith-two {
+	width: 66px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_24.png) center no-repeat;
+	
+}
+.zenith-three {
+	width: 66px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_25.png) center no-repeat;
+	
+}
+.zenith-four {
+	width: 74px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_26.png) center no-repeat;
+	
+}
+.zenith-five {
+	width: 69px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_27.png) center no-repeat;
+	
+}
+.zenith-six {
+	width: 66px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_34.png) center no-repeat;
+	
+}
+.zenith-seven {
+	width: 64px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_36.png) center no-repeat;
+	
+}
+.zenith-eight {
+	width: 66px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_38.png) center no-repeat;
+	
+}
+.zenith-nine {
+	width: 68px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_40.png) center no-repeat;
+	
+}
+.zenith-zero {
+	width: 67px;
+	height: 101px;
+	background: url(../../resources/images/simon-dice-retro-assets_42.png) center no-repeat;
+	
+}

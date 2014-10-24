@@ -1,0 +1,46 @@
+/* Scene Title */
+#SceneTitle {
+	visibility: hidden;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+}
+
+#SceneTitle #logo {
+	visibility: visible;
+	background: url(../../resources/images/logo.png) center no-repeat;
+	width: 570px;
+	height: 528px;
+	top: -70px;
+    position: relative;
+}
+
+#SceneTitle #title-text-bg {
+	background: url(../../resources/images/inputbg.png) center no-repeat;
+	width: 480px;
+	height: 77px;
+	display: block;
+	/*display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;*/
+	position: relative;
+	top: 30px;
+	padding: 0;
+}
+
+#SceneTitle #title-text-bg #title-text {
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	top: -2px;
+}
+
+#SceneTitle #title-text-bg #title-text img {
+	vertical-align: middle;
+}
+
+#SceneTitle #title-text-bg #title-text span {
+	vertical-align: middle;
+	font-size: 48px;
+}

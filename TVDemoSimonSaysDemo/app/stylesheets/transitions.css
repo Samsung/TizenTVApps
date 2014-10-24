@@ -1,0 +1,14 @@
+/* Fades */
+@-webkit-keyframes fade-in{
+	from { opacity: 0; }
+}
+
+@-webkit-keyframes fade-out{
+	to { opacity: 0; }
+}
+
+@-webkit-keyframes fade-in-out{
+	0%		{ opacity: 1; }
+	50%		{ opacity: 0; }
+	100%	{ opacity: 1; }
+}
