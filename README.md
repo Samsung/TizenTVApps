@@ -45,7 +45,7 @@ Original MelonJS Demo App: http://melonjs.github.io/tutorial-platformer/
 
 Additional Tizen HTML5 Apps: https://developer.tizen.org/downloads/sample-web-applications
 
-PhaserJS homepage: http://phaser.io/
+Phaser homepage: http://phaser.io/
 
 
 
