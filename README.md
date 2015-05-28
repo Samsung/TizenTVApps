@@ -1,12 +1,25 @@
 TizenTVApps
 ===========
 
-This repository hosts applications for the Tizen TV Web Platform.  Tizen TV apps are HTML5/JS/CSS applications and can be run in the Tizen TV Web Simulator.  You can find the Tizen TV SDK 1.0 Beta (with Web Simulator) here:
+This repository hosts applications for the Tizen TV Web Platform.  Tizen TV apps are HTML5/JS/CSS applications and can be run in the Tizen TV Web Simulator.  You can find the Tizen TV SDK 1.4 (with Web Simulator) here:
 
 http://www.samsungdforum.com/TizenDevtools/SdkDownload
 
 App Overview
 ------------
+
+**May 28, 2015**
+
+We added 2 video apps (HTML5 and AVPlayer) and a simple image slideshow:
+
+**TVDemoSlideShow** A simple HTML5/CSS3 image slide show:
+<img src="https://raw.githubusercontent.com/rodrigogrow/TizenTVApps/master/screenshots/imageslideshow.png" alt="Demo in Web Simulator" style="width:250px"/>
+
+**TVDemoVideoPlayer** A simple video player app, it uses HTML5 tag video:
+<img src="https://raw.githubusercontent.com/rodrigogrow/TizenTVApps/master/screenshots/videotizenappdemon.png" alt="Demo in Web Simulator" style="width:250px"/>
+
+**TVDemoAvPlay** A simple video player using Tizen WebAPI for AVPlay component (It supports DRMs and streaming engines like DASH, HAS, HLS and SmoothStreaming) Must be tested on TV Tizen Emulator:
+<img src="https://raw.githubusercontent.com/rodrigogrow/TizenTVApps/master/screenshots/avplayerappdemo.png" alt="Demo in Web Simulator" style="width:250px"/>
 
 **October 24, 2014**
 
