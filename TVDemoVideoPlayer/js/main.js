@@ -13,7 +13,7 @@ Main.onLoad = function () {
 	
 	// setup video player
 	Player.init("player");
-	Player.prepare("video_test.mp4"); // <-- set video URL here!
+	Player.prepare("http://yourvideourl.mp4"); // <-- set video URL here!
 }
 
 // called when application has closed
