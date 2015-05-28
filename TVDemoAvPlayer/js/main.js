@@ -13,7 +13,7 @@ Main.onLoad = function () {
 	
 	// setup video player
 	AVPlayer.init("av-player");
-	AVPlayer.prepare("http://techslides.com/demos/sample-videos/small.mp4"); // <-- set video URL here!
+	AVPlayer.prepare("http://yourvideourl.mp4"); // <-- set video URL here!
  
 }
 
