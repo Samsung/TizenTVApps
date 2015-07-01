@@ -1,0 +1,66 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/roboto-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General Style */
+
+body {
+    margin: 0px auto;
+}
+
+.titlebox {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	padding-left: 30px;
+	padding-right: 20px;
+	color: #fff;
+	font-family: 'RobotoRegular'; 
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: left;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.video-skin {
+	position: relative;
+	margin-left: auto ;
+  	margin-right: auto ;
+	bottom: 80px;
+	background-color: rgba(0,0,0,0.8);
+	width: 900px;
+	height: 70px;
+}
+
+.time-info {
+	width: 300px;
+	color: #fff;
+	font-family: 'RobotoRegular';
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	font-size: 27px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 7px;
+}
+
+.progress {
+  height: 20px;  
+  position: relative;
+  width: 100%;
+  background-color: #777;
+  /* background-color: rgba(0,0,0,0.8); */
+}
+
+#progress-amount {
+  display: block;
+  height: 100%;
+  background-color: #595;
+  width: 0px;
+}
+
