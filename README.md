@@ -45,7 +45,7 @@ We are happy to add 2 new apps that use the [Phaser](http://phaser.io/) game lib
 How to Run
 ------------
 - Clone this repository to your desktop
-- Install the Tizen TV Web SDK 1.0 Beta (available here: http://www.samsungdforum.com/TizenDevtools/SdkDownload )
+- Install the Tizen TV Web SDK 1.5 (available here: http://www.samsungdforum.com/TizenDevtools/SdkDownload )
 - Launch the Tizen IDE and import each app's folder into your workspace
 - After important, right-click on the app's folder and choose 
  Run As > Tizen TV Web Simulator Application (Samsung TV)
