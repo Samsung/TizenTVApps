@@ -1,0 +1,340 @@
+
+/* Layout */
+
+body
+{
+	width: 1920px;
+	height: 1080px;
+	background-color:  #2a2a2a;
+	overflow: hidden;
+}
+
+.mainPage{
+	position: absolute;
+	left: 0;
+	top: 0;	
+	width: 1920px;
+	height: 1080px;
+	display: block;
+}
+
+#FirstScreenText{
+	position: absolute;
+	left:580px;
+	top: 350px;
+	font-size: 90px;
+	font-weight: bold;
+	color: #C0C0C0;
+	display: inline-block;
+    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+    transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+}
+
+#VideoList{
+	position: absolute;
+	left:1300px;
+	top: 950px;
+	font-size: 40px;
+	font-weight: bold;
+	color:#C0C0C0;
+	-webkit-animation-duration: 1000ms;
+   -webkit-animation-name: blink;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 1;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+
+#labelText{
+	position: absolute;
+	left:1300px;
+	top: 950px;
+	font-size: 30px;
+	font-weight: bold;
+	color: aqua;
+}
+	
+.wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;	
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+	background-color: #05151E;
+	display: none;
+}
+
+.video-container.full {
+	width: 1920px;
+	height: 1080px;
+	top:0px;
+	left:0px;
+}
+
+.video-container.full::before {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+#av-player {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;	
+	transition: left 0.3s ease, top 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.menu-container {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 200px;
+	transition: bottom 0.3s ease;
+	display: block;
+}
+
+
+.video-container.full ~ .menu-container {
+	bottom: -200px;
+}
+
+
+.controlArea {
+	position: absolute;
+	top: 0;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.controlArea .controlBtn {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	position: relative;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: rgba(53,147,209,1);
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.15);
+	box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+	color: white;
+	position: relative;	
+	transition: all 0.3s ease 0s;
+	margin-top:0;
+	margin-left: 20px;
+	margin-right: 20px;
+	transform: scale(1);
+}
+
+/**** inserts the images and hover ******/
+
+.controlArea .controlBtn.hover,
+.controlArea .controlBtn:hover {
+	width: 180px;
+	height: 180px;
+}
+.controlArea .controlBtn.hover.down ,
+.controlArea .controlBtn:hover.down {
+	box-shadow: none;
+}
+.controlArea .controlBtn.hover.down::before ,
+.controlArea .controlBtn:hover.down::before {
+	font-size: 70px;
+}
+.controlArea .controlBtn::before {
+	font-family: 'FontAwesome';
+	font-size: 70px;
+	transition: all 0.3s ease 0s;
+}
+.controlArea .controlBtn.hover::before,
+.controlArea .controlBtn:hover::before {
+	font-size: 100px;
+}
+.controlArea .controlBtn.playPause::before {
+	content: '\f04b';
+}
+.controlArea .controlBtn.playPause.pause::before {
+	content: '\f04c';
+}
+.controlArea .controlBtn.ff::before {
+	content: '\f04e';
+	margin-right: -14px;
+}
+.controlArea .controlBtn.rew::before {
+	content: '\f04a';
+	margin-left: -14px;
+}
+.controlArea .controlBtn.stop::before {
+	content: '\f04d';
+}
+
+.controlBtn:nth-child(1){
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.3s;
+	background: rgba(0,162,100,0.7);
+}
+.controlBtn:nth-child(2){
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.4s;
+	background: rgba(238,62,100,0.7);
+}
+.controlBtn:nth-child(3){
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.5s;
+	background: rgba(0,162,202,0.7);
+}
+.controlBtn:nth-child(4){
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.6s;
+	background: rgba(216,29,59,0.7);
+}
+
+
+.video-container.full ~ .menu-container .controlBtn:nth-child(1){
+	transform: scale(0);
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.6s;
+}
+.video-container.full ~ .menu-container .controlBtn:nth-child(2){
+	transform: scale(0);
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.5s;
+}
+.video-container.full ~ .menu-container .controlBtn:nth-child(3){
+	transform: scale(0);
+	transition: all 0.3s ease 0s, transform 0.3s ease 0.4s;
+}
+.video-container.full ~ .menu-container .controlBtn:nth-child(4){
+	transform: scale(0);
+	transition:all 0.3s ease 0s,  transform 0.3s ease 0.3s;
+}
+
+
+.sliderArea {
+	position: absolute;
+	bottom: -5px;
+	width: 100%;
+	height: 5px;
+	background-color: grey;
+}
+.sliderArea .sliderBar{
+	width: 0%;
+	height: 5px;
+	background-color: #00ecff;
+}
+.sliderArea .slider{
+	position: relative;
+	top: -18px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+}
+
+.video-container.full .sliderArea{
+	bottom: 1px;
+}
+
+.time-info {
+	position: absolute;
+	color: white;
+	font-size: 30px;
+	left: 50px;
+	bottom: 50px;
+	font-weight: bold;
+}
+
+.progress {
+  position: absolute;
+  height: 20px;  
+  width: 100%;
+  background-color: #777;
+  bottom: 0px;
+}
+
+#progress-amount {
+  display: block;
+  height: 100%;
+  background-color: DeepSkyBlue;
+  width: 0px;
+  bottom: -20px;
+}
+
+
+#gridContainer{
+	position:absolute;
+	left: 180px;
+	top: 100px;
+	width: 1550px;
+	height: 850px;
+	overflow:hidden;
+	box-shadow: 0px 0px 40px 10px black;
+	display:none;
+}
+
+.vGrid{
+	position:absolute;
+	/*width:208px;*/
+	width: 300px;
+	margin-left:20px;
+}
+.hGrid{
+	position:absolute;
+	margin-top:30px;
+	/*height:668px;*/
+	height: 900px;
+}
+.hGridColumn{
+	/*height:668px;*/
+	height: 900px;
+	float:left;
+}
+
+.thumbImg{  
+	display:none;
+} 
+
+.thumbImgParent{
+	position:absolute;
+	left:90px;
+	background-size: contain;
+	top:10px;
+	height: 280px;		/* image width and height increases */
+	width: 250px;
+	background-repeat:no-repeat;
+}
+
+.thumbContainer{
+	position: relative;
+	height: 280px;		/* container width and height increases */
+	width: 300px;
+	float:left;
+	left: 90px;
+}
+
+#thumbFocus{
+	position:relative;
+	margin-left:90px;
+	margin-top: 0px;
+	height: 200px;
+	width: 240px;
+    border:10px solid #C0C0C0;
+	box-shadow: 0px 0px 40px 10px #C0C0C0;
+}
+
+.thumbBlur{
+	-webkit-transition: opacity 0.5s ease-out, -webkit-transform 0.5s ease-out;
+    -webkit-transform: scale(0.9);
+    opacity: 1.0;
+}
