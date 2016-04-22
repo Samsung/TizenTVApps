@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Responsive Image Gallery</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Responsive Image Gallery with jQuery" />
+    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!-- 3 KB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script type="text/javascript" src="js/detail.js"></script>
+    <!-- 16 KB -->
+</head>
+
+<body>
+    <nav id="menu_left" class="fl">
+        <ul>
+            <li tabindex="0">
+                <a href="#">
+                    <div id="disable" style="display: none;" class="displaynoe">
+                        <i class="fa fa-circle-o"></i>
+                        <br> Disable Music
+                    </div>
+                    <div id="enable" on-click="onclick():">
+                        <i class="fa fa-circle"></i>
+                        <br> Enable Music
+                    </div>
+                </a>
+            </li>
+            <li tabindex="1">
+                <a href="#">
+                    <span class="fa fa-bookmark"></span>
+                    <span>
+                    Slide Option
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="right-coontainer" class="container fr" style="z-index: 1000">
+        <div id="fotorama" class="fotorama" data-keyboard="true" data-arrows="true" data-click="true" data-swipe="true" data-autoplay="false" data-width="100%" data-height="80%" data-loop="true" data-navposition="bottom"  data-width="700" data-maxwidth="100%" data-ratio="16/9" data-allowfullscreen="true" data-transition="slide" data-clicktransition="crossfade" data-allowfullscreen="native">
+           <img src="images/slider/0.jpg">
+            <img src="images/slider/1.jpg">
+            <img src="images/slider/2.jpg">
+            <img src="images/slider/3.jpg">
+            <img src="images/slider/4.jpg">
+            <img src="images/slider/5.jpg">
+            <img src="images/slider/6.jpg">
+            <img src="images/slider/7.jpg">
+            <img src="images/slider/8.jpg">
+            <img src="images/slider/9.jpg">
+            <img src="images/slider/10.jpg">
+            <img src="images/slider/11.jpg">
+            <img src="images/slider/12.jpg">
+            <img src="images/slider/13.jpg">
+            <img src="images/slider/14.jpg">
+            <img src="images/slider/15.jpg">
+            <img src="images/slider/16.jpg">
+            <img src="images/slider/17.jpg">
+            <img src="images/slider/18.jpg">
+            <img src="images/slider/19.jpg">
+            <img src="images/slider/20.jpg">
+            <img src="images/slider/21.jpg">
+            <img src="images/slider/22.jpg">
+            <img src="images/slider/23.jpg">
+        </div>
+        <ul class="control-effect">
+            <li id="div-flip" style="font-size:30px">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGkq84OLWgbaWZ0BajJNQTdgkHOGlLvr-aQUFsXXSqo8uqfI_o">
+                <br> Flip
+            </li>
+            <li id="div-rotate" style="font-size:30px">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQeoml8-lt6GITZ3pRe9fp9PYHroti7uav_LCyyIIuHkNDrieSCg">
+                <br> Rotate
+            </li>
+            <li id="div-slideshow" style="font-size:25px">
+                <img src="https://lh5.ggpht.com/viwdytxkO6fRgKj8GwQdxXx3_4TSWrbLVy0xhfi-uBIKTiZ9enevREtYRnADxVPc11WGg_zG=w512">
+                <br> Slide Show
+            </li>
+        </ul>
+    </div>
+    <div id="light-overlay" style="position: fixed;/z-index: 999;  opacity: 0.98; */ top: 0px; left: 0px; width: 100%; height: 100%; display: block; background-color: rgb(0, 0, 0);"></div>
+    <!--  <audio controls id="ctrlaudio" style="display: none;">
+        <source src="media/Forever.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio> -->
+</body>
+
+</html>

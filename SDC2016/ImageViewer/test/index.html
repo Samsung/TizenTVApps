@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Responsive Image Gallery</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Responsive Image Gallery with jQuery" />
+    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+  <!--   <nav id="menu_left" class="fl">
+        <ul>
+            <li tabindex="0">
+                <a href="index.html">
+                    <i class="fa fa-circle-o"></i>
+                     <i class="fa fa-circle"></i> 
+                    <br>
+                    <span>Change Background</span>
+                </a>
+            </li>
+            <li tabindex="1">
+                <a href="#">
+                    <span class="fa fa-bookmark"></span>
+                    <span>
+                    Slide Option
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+    <!-- end menu left -->
+    <!-- right contanier -->
+    <div id="right-coontainer" class="container fr" style="width: calc(100% - 5%);">
+        <h2>Tizen Image Viewer</h2>
+        <div id="tabs">
+            <ul>
+                <li id="tab1"><a href="#tabs-1">Sport</a></li>
+                <li id="tab2"><a href="#tabs-2" style="    background: linear-gradient(141deg, yellow 0%, #fbcb09 51%, #fbcb09 75%);    color: white;    border: yellow;">Natural</a></li>
+                <li id="tab3"><a href="#tabs-3" style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);    color: white;    border: #2cb5e8;">Science</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="card_layout">
+                    <ul tabindex="0" class="clearfix carousel_ul owl-carousel">
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/13.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/14.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class=" similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/2.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/8.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/12.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/15.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/16.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/17.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/18.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/19.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="card_layout">
+                    <ul tabindex="0" class="clearfix carousel_ul owl-carousel">
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/8.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/2.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/12.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/15.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class=" similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/2.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/15.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="card_layout">
+                    <ul tabindex="0" class="clearfix carousel_ul owl-carousel">
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/15.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/12.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/2.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/15.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/20.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class=" similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/1.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/2.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/3.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/4.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/9.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/5.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/6.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card_layout_data">
+                                <div tabindex="0" class="hover-events-parent">
+                                    <a title="GF BF" class="  similar_album" href="imageviewer.html">
+                                        <img class="img" src="images/slider/8.jpg"> </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
