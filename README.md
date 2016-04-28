@@ -49,6 +49,16 @@ How to Run
 - Launch the Tizen IDE and import each app's folder into your workspace
 - After important, right-click on the app's folder and choose 
  Run As > Tizen TV Web Simulator Application (Samsung TV)
+- NOTE: If you are running latest Tizen IDE and try running these projects, you might get following error.
+{code}
+Cannot run program "tizen-sdk/tools/sec_tv_websimulator/node-webkit.app/Contents/MacOS/node-webkit": error=2, No such file or directory.
+{code}
+- Default IDE settings look like this:
+ ![IDE default simulator path settings](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/Screen Shot 2016-04-27 at 11.43.31 PM.png)
+- Make following changes to your IDE configuration in order to make it work.
+ ![IDE correct simulator path settings](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/correct_settings.png)
+- Go to Tizen SDK directory and navigate to tools/sec_tv_websimulator/nwjs.app/Contents/MacOS/
+- rename the file nwjs to node-webkit
 
 Current Issues
 ------------
