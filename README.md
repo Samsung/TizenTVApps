@@ -54,7 +54,7 @@ How to Run
 Cannot run program "tizen-sdk/tools/sec_tv_websimulator/node-webkit.app/Contents/MacOS/node-webkit": error=2, No such file or directory.
 {code}
 - Default IDE settings look like this:
- ![IDE default simulator path settings](https://raw.githubusercontent.com/mtrivedi/TizenTVApps/master/screenshots/Screen Shot 2016-04-27 at 11.43.31 PM.png)
+ ![IDE default simulator path settings](https://raw.githubusercontent.com/Samsung/TizenTVApps/master/screenshots/Screen%20Shot%202016-04-27%20at%2011.43.31%20PM.png)
 - Make following changes to your IDE configuration in order to make it work.
  ![IDE correct simulator path settings](https://raw.githubusercontent.com/mtrivedi/TizenTVApps/master/screenshots/correct_settings.png)
 - Go to Tizen SDK directory and navigate to tools/sec_tv_websimulator/nwjs.app/Contents/MacOS/
