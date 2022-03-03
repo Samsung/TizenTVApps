@@ -1,8 +1,10 @@
 # Tizen Web Service
-Tizen Web Service is a node application runnning on Node.js environment. In Tizen TV profile, this service application type has been supportable from Tizen 3.0.<br>
+Tizen Web Service is a node application runnning on Node.js environment. In Tizen TV profile, this service application type has been supportable from Tizen 3.0.
+
+Official Guide - https://docs.tizen.org/application/web/guides/applications/service-app/
 
 ## Life cycle
-There are 3 events of service application lifecycle.<br>
+There are 3 events of service application lifecycle.
  - onStart
  - onRequest
  - onExit
@@ -13,7 +15,7 @@ When the service application is terminated by itself, or platform reason, onExit
 
 ## Service application definition
 
-You can create web service application by <tizen:service> tag on config.xml <br>
+You can create web service application by <tizen:service> tag on config.xml<br>
 The <tizen:content src=''> in <tizen:service> is a start file of service application.
 
 ```
