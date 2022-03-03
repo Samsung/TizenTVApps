@@ -6,7 +6,7 @@ You can see the document of tizen.messageport API
  - https://www.tizen.org/tv/web_device_api/messageport?langredirect=1
 
 ## UI Application
-```
+```javascript
   var localPort = tizen.messageport.requestLocalMessagePort('debugging.port');
   localPort.addMessagePortListener((data, remotePort) => {
     console.log(`key : ${data[0]['key']}, value : ${data[0]['value']}`);
@@ -15,7 +15,7 @@ You can see the document of tizen.messageport API
 ```
 
 ## Service Application
-```
+```javascript
 var remotePort = null;
 var log = console.log;
 console.log = function (str) {
