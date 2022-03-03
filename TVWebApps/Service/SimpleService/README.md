@@ -4,7 +4,7 @@ This example shows how to launch web service application by Tizen AppControl.
 By Tizen webapi 'tizen.application.launchApp()' can execute the service application with AppControl data.
 
 ## UI application
-```
+```javascript
 const serviceId = 'rmyOMbyr0K.service';
 
 function launchServiceByAppcontrol() {
@@ -25,8 +25,7 @@ function launchServiceByAppcontrol() {
 ```
 
 ## Service application
-
-```
+```javascript
 module.exports.onRequest = function() {
   console.log("onRequest");
   
