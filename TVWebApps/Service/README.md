@@ -18,7 +18,7 @@ When the service application is terminated by itself, or platform reason, onExit
 You can create web service application by <tizen:service> tag on config.xml<br>
 The <tizen:content src=''> in <tizen:service> is a start file of service application.
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/SimpleService" version="1.0.0" viewmodes="maximized">
     <tizen:application id="rmyOMbyr0K.SimpleService" package="rmyOMbyr0K" required_version="2.3"/>
