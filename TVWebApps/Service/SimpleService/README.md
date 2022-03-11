@@ -1,7 +1,14 @@
 # SimpleService
 
-This example shows how to launch web service application by Tizen AppControl.
+> This example shows how to launch web service application by Tizen AppControl.
 By Tizen webapi 'tizen.application.launchApp()' can execute the service application with AppControl data.
+
+What is Tizen AppControl?
+> An application control (app control) is a way of communication Among Tizen applications.
+- https://docs.tizen.org/application/web/guides/app-management/app-controls/
+- https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/application-api.html
+
+# Example
 
 ## UI application
 ```javascript
