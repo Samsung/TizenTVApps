@@ -2,7 +2,7 @@
 
 Until current Tizen version (~6.5), there is no direct way to see the console.log() of service application via Tizen SDK. Tizen SDK only can capture 'console.log()' messages of UI application via remote inspector method.
 This example introduces a way to catch service app's console messages via tizen.messageport API.
-> You can see the document of tizen.messageport API
+> You can see the guide document of tizen.messageport API
 > - https://www.tizen.org/tv/web_device_api/messageport?langredirect=1
 
 # Example
