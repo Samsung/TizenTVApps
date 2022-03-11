@@ -5,7 +5,7 @@ By Tizen webapi 'tizen.application.launchApp()' can execute the service applicat
 
 ## UI application
 ```javascript
-const serviceId = 'rmyOMbyr0K.service';
+const serviceId = 'rmyOMbyr0K.service'; // this is a service application ID of config.xml
 
 function launchServiceByAppcontrol() {
     tizen.application.launchAppControl(
