@@ -4,7 +4,7 @@
 By Tizen webapi 'tizen.application.launchApp()' can execute the service application with AppControl data.
 
 What is Tizen AppControl?
-> An application control (app control) is a way of communication Among Tizen applications.
+> An application control (app control) is a way of communication among Tizen applications. It can launch another application with multiple set of data.
 - https://docs.tizen.org/application/web/guides/app-management/app-controls/
 - https://developer.samsung.com/smarttv/develop/api-references/tizen-web-device-api-references/application-api.html
 
