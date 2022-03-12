@@ -16,7 +16,7 @@ When the service application is terminated by itself, or platform reason, onExit
 ## Service application definition
 
 You can create web service application by <tizen:service> tag on config.xml<br>
-The <tizen:content src=''> in <tizen:service> is a start file of service application.
+The `<tizen:content src=''>` in `<tizen:service>` is a start file of service application.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
