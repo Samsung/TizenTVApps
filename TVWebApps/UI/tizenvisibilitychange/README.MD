@@ -8,8 +8,13 @@ In Tizen platform, the conventional way to catch the visible time is `visibility
 Thus, in Tizen TV profile, WRT team introduced newly `tizenvisibilitychange` event to solve this problem.
 
 ```javascript
-document.addEventListener('tizenvisibilitychange', function(event) {
-  if (event.detail.visible)  { // 1 is visible, 0 is invisible
-  }
-});
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { // 1 is invisible, 0 is visible, but this is not fired on executing time
+    }
+  }, false);
+
+  document.addEventListener('tizenvisibilitychange', function(event) {
+    if (event.detail.visible)  { // 1 is visible, 0 is invisible
+    }
+  });
 ```
