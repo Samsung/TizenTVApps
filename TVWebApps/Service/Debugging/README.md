@@ -29,7 +29,7 @@ console.log = (str) => {
     }
     if (remotePort)
       remotePort.sendMessage([{ key: 'console-log', value: str }]);
-  } catch {
+  } catch(e) {
     hasMessagePortException = true;
   }
 }
