@@ -37,7 +37,7 @@ console.log = (str) => {
 module.exports.onRequest = function () {
   console.log("onRequest");
 
-  var cnt = 0;
+  let cnt = 0;
   setInterval(function () {
     cnt++;
     if (cnt == 10) {
