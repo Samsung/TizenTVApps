@@ -8,7 +8,7 @@ This example introduces a way to catch service app's console messages via tizen.
 # Example
 ## UI Application
 ```javascript
-  var localPort = tizen.messageport.requestLocalMessagePort('debugging.port');
+  let localPort = tizen.messageport.requestLocalMessagePort('debugging.port');
   localPort.addMessagePortListener((data, remotePort) => {
     console.log(`key : ${data[0]['key']}, value : ${data[0]['value']}`);
     document.getElementById('message-box').innerHTML = data[0]['value'];
@@ -17,16 +17,21 @@ This example introduces a way to catch service app's console messages via tizen.
 
 ## Service Application
 ```javascript
-var remotePort = null;
-var log = console.log;
-console.log = function (str) {
+let hasMessagePortException = false;
+let remotePort = null;
+let log = console.log;
+console.log = (str) => {
   log(str);
-
-  if (!remotePort) {
-    remotePort = tizen.messageport.requestRemoteMessagePort('8Y8kP6PZ6U.ServiceDebugging', 'debugging.port');
+  if (hasMessagePortException) return;
+  try {
+    if (!remotePort) {
+      remotePort = tizen.messageport.requestRemoteMessagePort('8Y8kP6PZ6U.ServiceDebugging', 'debugging.port');
+    }
+    if (remotePort)
+      remotePort.sendMessage([{ key: 'console-log', value: str }]);
+  } catch {
+    hasMessagePortException = true;
   }
-  if (remotePort)
-    remotePort.sendMessage([{ key: 'console-log', value: str }]);
 }
 
 module.exports.onRequest = function () {
