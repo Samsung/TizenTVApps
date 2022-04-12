@@ -16,6 +16,7 @@ This example introduces a way to catch service app's console messages via tizen.
 ```
 
 ## Service Application
+> This way is only working while the UI application is alive. If UI application is not alive, there will be JS exception at requestRemoteMessagePort()
 ```javascript
 let hasMessagePortException = false;
 let remotePort = null;
