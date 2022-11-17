@@ -49,3 +49,5 @@ module.exports.onRequest = function() {
 }
 
 ```
+
+| Note: ApplicationControl array data order order in which the sender set is not guaranteed on the receiver.
