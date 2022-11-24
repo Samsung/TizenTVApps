@@ -3,7 +3,7 @@ TizenTVApps
 
 This repository hosts applications for the Tizen TV Web Platform.  Tizen TV apps are HTML5/JS/CSS applications and can be run in the Tizen TV Web Simulator.  You can find the Tizen TV SDK 1.4 (with Web Simulator) here:
 
-http://www.samsungdforum.com/TizenDevtools/SdkDownload
+https://developer.samsung.com/smarttv/develop/getting-started/setting-up-sdk/installing-tv-sdk.html
 
 App Overview
 ------------
@@ -45,7 +45,7 @@ We are happy to add 2 new apps that use the [Phaser](http://phaser.io/) game lib
 How to Run
 ------------
 - Clone this repository to your desktop
-- Install the Tizen TV Web SDK 1.5 (available here: http://www.samsungdforum.com/TizenDevtools/SdkDownload )
+- Install the Tizen TV Web 1.5 (available here: https://developer.samsung.com/smarttv/develop/getting-started/setting-up-sdk/installing-tv-sdk.html)
 - Launch the Tizen IDE and import each app's folder into your workspace
 - After important, right-click on the app's folder and choose 
  Run As > Tizen TV Web Simulator Application (Samsung TV)
